@@ -46,7 +46,7 @@ h2 {
     font-size: 16px;
     width: 220px;
     background: var(--color-bg-primary);
-    color: var(--color-primary)
+    color: var(--color-primary);
     border-radius: 30px;
     font-weight: 500;
     text-transform: uppercase;
@@ -70,10 +70,15 @@ h2 {
     width: 100%;
     z-index: 1;
     padding: 32px 0;
+}
 
+.header.header_secondary {
+    background-color: var(--color-text-primary);
+    position: initial;
 }
 
 .header__inner {
+    display:flex;
     width: 1300px;
     margin: 0 auto;
     justify-content: space-between;
@@ -91,7 +96,12 @@ h2 {
     margin-right: 48px;
 }
 
-.header__nav-button: last-child {
+.header__nav-button {
+    margin-right:24px;
+}
+
+
+.header__nav-button:last-child {
     margin-right: 0;
 }
 
@@ -121,7 +131,7 @@ h2 {
     background: #bf3939ef;
 }
 .landing__overlay-dark {
-    height: 100;
+    height: 100%;
     right: 0;
     width: 73%;
     position: absolute;
@@ -152,3 +162,68 @@ h2 {
     margin-bottom: 48px;
 }
 
+/* COURSES SECTION */
+
+.courses__section {
+  
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+}
+.inner__section {
+    display: grid;
+    width: 1300px;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inner__p1 {
+
+    font-weight: 500;
+    color: #bf3939;
+    margin-bottom: 24px;
+}
+
+.inner__h2 {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+}
+.button__inner {
+    grid-row: 2;
+    grid-column: 2;
+    width: 200px;
+    border: 1px solid #bf3939;
+    justify-self: end;
+}
+
+.courses { 
+    display: grid;
+    width: 1300px;
+    margin: 0 auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+.lecture {
+    
+}
+
+.slika {
+    height: 275px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.slikica {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.
+/* display: grid;
+    gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
